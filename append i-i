@@ -1,0 +1,19 @@
+while True:
+    meme_dict = {
+                "CRINGE": "Coś wyjątkowo dziwnego lub zawstydzającego",
+                "LOL": "Częsta reakcja na coś zabawnego",
+                }
+
+    word = input("Wpisz słowo, którego nie rozumiesz (używaj wielkich liter!): ")
+
+    if word in meme_dict.keys():
+        print(meme_dict[word])
+    #sprawdza list jeżeli i pokazuje znaczenie słowa
+    else:
+    # Co powinniśmy zrobić, jeśli słowo nie zostało znalezione?
+        print("nie znam tego, czy chcesz dodać słowo i znaczenie")
+        pytanie1 = input("tak czy nie")
+        if pytanie1 == "tak":
+            pytanie_slowo = input("podaj słowo")
+            pytanie_znaczenie = input("podaj znaczenie")
+            meme_dict[pytanie_slowo] = pytanie_znaczenie
